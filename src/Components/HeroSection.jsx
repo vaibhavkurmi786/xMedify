@@ -84,7 +84,7 @@ const HeroSection = () => {
 
           {/* Right Image */}
           <div className="relative w-1/2  flex justify-end items-start">
-            <img src="/src/assets/hero_image.png" alt="Doctors" className="" />
+            <img src="/hero_image.png" alt="Doctors" className="" />
           </div>
           <div className="absolute inset-x-0 top-full px-10 py-8">
             <div className=" bg-white rounded-lg shadow-lg p-5 ">

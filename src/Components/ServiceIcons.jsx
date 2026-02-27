@@ -3,23 +3,23 @@ import React from 'react';
 const ServiceIcons = () => {
   const services = [
     {
-      icon: '/src/assets/Doctor.png',
+      icon: '/Doctor.png',
       label: 'Doctors',
     },
     {
-      icon: '/src/assets/Drugstore.png',
+      icon: '/Drugstore.png',
       label: 'Labs',
     },
     {
-      icon: '/src/assets/Hospital.png',
+      icon: '/Hospital.png',
       label: 'Hospital',
     },
     {
-      icon: '/src/assets/Capsule.png',
+      icon: '/Capsule.png',
       label: 'Medical Store',
     },
     {
-      icon: '/src/assets/Ambulance.png',
+      icon: '/Ambulance.png',
       label: 'Ambulance',
     },
   ];

@@ -20,7 +20,7 @@ const MedicalCenterCard = ({
             <div className="relative w-32 h-32 bg-blue-300 rounded-full flex items-center justify-center">
               <img
                 className="w-1/2 h-auto"
-                src="src/assets/hopitalImg.png"
+                src="/hopitalImg.png"
                 alt=""
               />
               <div className="absolute right-0 bottom-5 text-blue-500">

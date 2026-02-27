@@ -3,10 +3,9 @@ import { IoLogoGooglePlaystore } from "react-icons/io5";
 import { FaApple } from "react-icons/fa";
 import "../App.css";
 
-const phoneMockup1 = "src/assets/SeekPng 1.png"; // Place your phone mockup images in assets
-const phoneMockup2 = "src/assets/SeekPng 1.png";
-const googlePlayIcon = "src/assets/google-play.png"; // Place your store icons in assets
-const appStoreIcon = "src/assets/app-store.png";
+const phoneMockup1 = "/SeekPng 1.png"; 
+const phoneMockup2 = "/SeekPng 1.png";
+
 
 const AppDownload = () => {
   const [phone, setPhone] = useState("");
