@@ -115,7 +115,7 @@ const SearchResultsPage = () => {
           <div className="absolute inset-x-0 top-0 px-10 py-8">
             <div className="bg-white rounded-lg shadow-lg p-5">
               <div className="flex flex-col md:flex-row gap-4 p-5">
-                <div className="flex-1 flex items-center gap-2 border border-gray-300 rounded-lg px-4 py-3">
+                <div className="flex-1 flex items-center gap-2 border border-gray-300 rounded-lg px-4 py-3" id="state">
                   <FaMapMarkerAlt className="text-blue-400" />
                   <select
                     value={selectedState}
@@ -133,7 +133,7 @@ const SearchResultsPage = () => {
                     ))}
                   </select>
                 </div>
-                <div className="flex-1 flex items-center gap-2 border border-gray-300 rounded-lg px-4 py-3">
+                <div className="flex-1 flex items-center gap-2 border border-gray-300 rounded-lg px-4 py-3" id="city">
                   <FaSearch className="text-blue-400" />
                   <select
                     value={selectedCity}
@@ -150,6 +150,7 @@ const SearchResultsPage = () => {
                   </select>
                 </div>
                 <button
+                  id="searchBtn"
                   onClick={() => {
                     if (selectedState && selectedCity) {
                       setSearching(true);
@@ -174,7 +175,7 @@ const SearchResultsPage = () => {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             {selectedState && selectedCity
-              ? `${medicalCenters.length} medical centers available in ${selectedCity}, ${selectedState}`
+              ? `${medicalCenters.length} medical centers available in ${selectedCity.toLowerCase()}`
               : "Find medical centers by selecting state and city"}
           </h1>
           <p className="text-gray-600">

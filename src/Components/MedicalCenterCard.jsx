@@ -73,6 +73,7 @@ const MedicalCenterCard = ({
                     <button
                       onClick={() => onBookAppointment(center)}
                       className="bg-blue-300 hover:bg-blue-600 text-white px-2 py-3 rounded-lg font-medium transition-colors w-full md:w-auto"
+                      data-cy="book-center-visit"
                     >
                       Book FREE Center Visit
                     </button>

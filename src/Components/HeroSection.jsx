@@ -89,7 +89,7 @@ const HeroSection = () => {
           <div className="absolute inset-x-0 top-full px-10 py-8">
             <div className=" bg-white rounded-lg shadow-lg p-5 ">
               <div className="flex flex-col md:flex-row gap-4 p-5">
-                <div className="flex-1 flex items-center gap-2 border border-gray-300 rounded-lg px-4 py-3">
+                <div className="flex-1 flex items-center gap-2 border border-gray-300 rounded-lg px-4 py-3" id="state">
                   <FaMapMarkerAlt className="text-blue-400" />
                   <select
                     value={selectedState}
@@ -104,7 +104,7 @@ const HeroSection = () => {
                     ))}
                   </select>
                 </div>
-                <div className="flex-1 flex items-center gap-2 border border-gray-300 rounded-lg px-4 py-3">
+                <div className="flex-1 flex items-center gap-2 border border-gray-300 rounded-lg px-4 py-3" id="city">
                   <FaSearch className="text-blue-400" />
                   <select
                     value={selectedCity}
@@ -121,6 +121,7 @@ const HeroSection = () => {
                   </select>
                 </div>
                 <button
+                  id="searchBtn"
                   onClick={handleSearch}
                   className="w-full md:w-auto bg-blue-400 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-medium flex items-center justify-center gap-2 transition-colors"
                 >

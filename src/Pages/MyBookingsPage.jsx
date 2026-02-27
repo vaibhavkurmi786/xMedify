@@ -46,7 +46,7 @@ const MyBookingsPage = () => {
       <Heading />
       <Nav />
       <div className="relative bg-blue-400 py-4 px-10">
-        <h1 className="text-3xl font-bold text-white mb-2">My Bookings</h1>
+        <h1 className="text-3xl font-bold text-white mb-2" id="myBookingsHeading">My Bookings</h1>
         <div className="w-1/2 absolute right-0 top-0 px-10 py-8">
           <div className="bg-white rounded-lg shadow-lg p-4 flex items-center justify-between gap-2">
             <input
@@ -107,7 +107,7 @@ const MyBookingsPage = () => {
                     {/* Middle - Booking Details */}
                     <div className="w-full ">
                       <div className="w-full flex justify-between px-2 py-1 gap-3 ">
-                        <h3 className="text-xl font-bold text-blue-400 p-2">
+                        <h3 className="text-xl font-bold text-blue-400 p-2" data-cy="booking-center-name">
                           {booking.center.name}
                         </h3>
 
